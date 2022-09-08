@@ -7,8 +7,7 @@
         try{
             $user = "lapro_site";
             $pass = "TDataSource1234";
-            $mabase = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=lapro_virus', $user, $pass);
-            //$mabase = new PDO('mysql:host=127.0.0.1;dbname=lapro_virus', $user, $pass);
+            $mabase = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projet', 'suard', 'luifer8000512');
         }catch(Exception $e){
             $errorMessage .= $e->getMessage();
         }

@@ -1,12 +1,9 @@
 <?php
 session_start();
 include ("Classes/User.php");
-include ("Classes/Personnage.php");
-include ("Classes/Arme.php");
-highlight_file(__FILE__);
 try {
     // ---------------Connexion à la BDD et récupération et traitement du formulaire
-    $pdo = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projet', 'UserWeb', 'UserWeb');
+    $pdo = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projet', 'suard', 'lucifer8000512');
 } catch (Exception  $error) {
     $error->getMessage();
 }
@@ -35,7 +32,7 @@ $User1 = null;
     $User1->getUserByID($_SESSION['idUser']);
     $User1->afficheUser();
     ?>
-     <li><a href="CRUD/Personnage/CRUD_Create.php">Creer un Personnage</a></li>
+     <li><a href="CRUD/location/CRUD_Create.php">Creer un User</a></li>
     <?php
 }
 ?>
