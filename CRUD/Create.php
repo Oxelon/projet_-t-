@@ -5,7 +5,7 @@ include ("../../Classes/User.php");
 
 try {
     // ---------------Connexion à la BDD et récupération et traitement du formulaire
-    $pdo = new PDO('mysql:host=192.168.65.193;dbname=Combat', 'UserWeb', 'UserWeb');
+    $pdo = new PDO('mysql:host=suard.alwaysdata.net;dbname=suard_projet', 'suard', 'lucifer8000512');
 } catch (Exception  $error) {
     $error->getMessage();
 }

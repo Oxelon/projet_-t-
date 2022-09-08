@@ -5,7 +5,7 @@ include ("User.php");
 
 try {
     // ---------------Connexion à la BDD et récupération et traitement du formulaire
-    $pdo = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projet', 'root', 'root');
+    $pdo = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projet', 'suard', 'luifer8000512');
 } catch (Exception  $error) {
     $error->getMessage();
 }

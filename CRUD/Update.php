@@ -1,7 +1,7 @@
 <?php include ("location.php");
 
 try {
-    $pdo = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projet', 'UserWeb', 'UserWeb');
+    $pdo = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projet', 'suard', 'lucifer8000512');
 } catch (Exception  $error) {
     $error->getMessage();
 }
