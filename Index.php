@@ -2,7 +2,7 @@
 session_start();
 include "Classes/Utilisateur.php";
 try {
-    $BDD = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projey', 'suard', 'lucifer8000512');
+    $BDD = new PDO('mysql:host=mysql-suard.alwaysdata.net;dbname=suard_projet', 'suard', 'lucifer8000512');
 } catch (Exception $e) {
     echo $e;
 }
@@ -36,7 +36,7 @@ try {
             </ul>
         </nav>
     </div>
-    <h1 class="centre"><u>Bienvenue Sur Astuce-Jeux !</u></h1>
+    <h1 class="centre"><u>Bienvenue Sur mon site de location !</u></h1>
 </body>
 
 </html>
